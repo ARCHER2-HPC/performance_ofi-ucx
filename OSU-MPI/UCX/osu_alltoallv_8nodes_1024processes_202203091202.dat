@@ -1,0 +1,17 @@
+== Nodes = 8
+== Processes = 1024
+
+# OSU MPI All-to-Allv Personalized Exchange Latency Test v5.9
+# Size       Avg Latency(us)
+1                    2171.03
+2                    2168.91
+4                    2138.58
+8                    2143.95
+16                   2200.23
+32                   2185.26
+64                   2257.01
+128                  2556.77
+256                  3283.95
+512                  4244.24
+1024                 6063.93
+2048                13831.00
