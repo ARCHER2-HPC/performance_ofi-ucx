@@ -7,14 +7,13 @@ def get_perf_dict(filename, nodes, system):
     df_list = []
     infile = open(filename, 'r')
     filedict = {}
-    filedict['Nodes'] = nodes
     filedict['File'] = filename
     filedict['System'] = system
     indata = False
     for line in infile:
         if indata:
             tokens = line.split()
-            if (len(tokens) < 4) or (len(tokens) > 6):
+            if (len(tokens) < 2) or (len(tokens) > 2):
                 break
             else:
                 resdict = {}
@@ -24,27 +23,26 @@ def get_perf_dict(filename, nodes, system):
                 resdict['Count'] = 1
                 df_list.append(resdict)
         else:
-           if re.search('# Date', line):
+           if re.search('== Nodes', line):
                tokens = line.split()
-               # filedict['Date'] = str(tokens[3:])
-               filedict['Date'] = str(0)
-           elif re.search('#processes', line):
+               filedict['Nodes'] = int(tokens[3])
+           elif re.search('== Processes', line):
                tokens = line.split()
                filedict['Processes'] = int(tokens[3])
-           elif re.search('#bytes', line):
+           elif re.search('# Size', line):
                indata = True
     infile.close()
     
     return df_list
 
 def get_perf_stats(df):
-    df_num = df.drop(['File', 'Date'], 1)
+    df_num = df.drop(['File'], 1)
     groupf = {'Perf':['min','median','max','mean'], 'Count':'sum'}
     df_group = df_num.sort_values(by='Nodes').groupby(['System','Nodes','Processes','Size']).agg(groupf)
     print(df_group)
 
 def get_node_scaling_df(df, system, size, stat, write_stats=False, plot_cores=False):
-    df_num = df.drop(['File', 'Date'], 1)
+    df_num = df.drop(['File'], 1)
     df_size = df_num.query(f'(Size == {size} & System == "{system}")')
     groupf = {'Perf':['min','median','max','mean'], 'Count':'sum'}
     if plot_cores:
@@ -58,7 +56,7 @@ def get_node_scaling_df(df, system, size, stat, write_stats=False, plot_cores=Fa
     return count, perf
 
 def get_size_scaling_df(df, system, nodes, stat, write_stats=False):
-    df_num = df.drop(['File', 'Date'], 1)
+    df_num = df.drop(['File'], 1)
     df_nodes = df_num.query(f'(Nodes == {nodes} & System == "{system}")')
     groupf = {'Perf':['min','median','max','mean'], 'Count':'sum'}
     df_group = df_nodes.sort_values(by='Size').groupby(['Size']).agg(groupf)
