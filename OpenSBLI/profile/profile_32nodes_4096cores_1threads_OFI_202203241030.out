@@ -1,0 +1,394 @@
+block "taylor_green_vortex_block" decomposed on to a processor grid of 16 x 16 x 16  
+Finished block decomposition
+Iteration is 0 
+End of time iteration loop 
+performed 100 iterations
+
+---------------------------------------------------------------------------
+
+Timings are:
+------------------Simulation time-----------------------------------------
+Total Wall time of the time iteration loop for 100 iterations, 48.732219
+Time taken for 1 iteration, 0.487322
+
+Not performing file I/O as write HDF5 is set to False
+
+#################################################################
+#                                                               #
+#            CrayPat-lite Performance Statistics                #
+#                                                               #
+#################################################################
+
+CrayPat/X:  Version 21.09.0 Revision b02949528  08/17/21 03:15:42
+Experiment:                   lite  lite-samples  
+Number of PEs (MPI ranks):   4,096
+Numbers of PEs per Node:       128  PEs on each of  32  Nodes
+Numbers of Threads per PE:       1
+Number of Cores per Socket:     64
+Execution start time:  Thu Mar 24 10:30:19 2022
+System name and speed:  nid004761  2.250 GHz (nominal)
+AMD   Rome                 CPU  Family: 23  Model: 49  Stepping:  0
+Core Performance Boost:  All 4096 PEs have CPB capability
+
+
+
+Avg Process Time:     52.73 secs              
+High Memory:      735,939.4 MiBytes     179.7 MiBytes per PE
+I/O Read Rate:     1.014801 MiBytes/sec       
+I/O Write Rate:    0.032292 MiBytes/sec       
+
+Notes for table 1:
+
+  This table shows functions that have significant exclusive sample
+    hits, averaged across ranks.
+  For further explanation, see the "General table notes" below,
+    or use:  pat_report -v -O samp_profile ...
+
+Table 1:  Profile by Function
+
+  Samp% |    Samp |  Imb. |  Imb. | Group
+        |         |  Samp | Samp% |  Function=[MAX10]
+        |         |       |       |   PE=HIDE
+       
+ 100.0% | 4,933.5 |    -- |    -- | Total
+|-----------------------------------------------------------------------------
+|  70.8% | 3,492.1 |    -- |    -- | USER
+||----------------------------------------------------------------------------
+||  40.3% | 1,990.5 | 541.5 | 21.4% | taylor_green_vortex_block0_12_kernel
+||   8.1% |   399.3 | 215.7 | 35.1% | ops_par_loop_taylor_green_vortex_block0_13_kernel
+||   5.8% |   287.2 | 134.8 | 31.9% | ops_par_loop_taylor_green_vortex_block0_14_kernel
+||   5.1% |   249.5 | 157.5 | 38.7% | ops_par_loop_taylor_green_vortex_block0_0_kernel
+||   2.1% |   103.4 |  42.6 | 29.2% | ops_par_loop_taylor_green_vortex_block0_15_kernel
+||   1.8% |    86.4 |  67.6 | 43.9% | ops_par_loop_taylor_green_vortex_block0_12_kernel
+||   1.1% |    52.4 |  40.6 | 43.7% | ops_par_loop_taylor_green_vortex_block0_11_kernel
+||============================================================================
+|  23.9% | 1,176.8 |    -- |    -- | MPI
+||----------------------------------------------------------------------------
+||  22.7% | 1,121.1 | 974.9 | 46.5% | MPI_Waitall
+||============================================================================
+|   5.0% |   246.8 |    -- |    -- | ETC
+||----------------------------------------------------------------------------
+||   4.1% |   202.9 | 117.1 | 36.6% | __cray_memcpy_ROME
+|=============================================================================
+
+Notes for table 2:
+
+  This table shows functions, and line numbers within functions, that
+    have significant exclusive sample hits, averaged across ranks.
+  For further explanation, see the "General table notes" below,
+    or use:  pat_report -v -O samp_profile+src ...
+
+Table 2:  Profile by Group, Function, and Line
+
+  Samp% |    Samp |  Imb. |  Imb. | Group
+        |         |  Samp | Samp% |  Function=[MAX10]
+        |         |       |       |   Source
+        |         |       |       |    Line
+        |         |       |       |     PE=HIDE
+       
+ 100.0% | 4,933.5 |    -- |    -- | Total
+|-----------------------------------------------------------------------------
+|  70.8% | 3,492.1 |    -- |    -- | USER
+||----------------------------------------------------------------------------
+||  40.3% | 1,990.5 |    -- |    -- | taylor_green_vortex_block0_12_kernel
+3|        |         |       |       |  Benchmark/./MPI_OpenMP/taylor_green_vortex_block0_12_kernel_omp_kernel.cpp
+||||--------------------------------------------------------------------------
+4|||   1.0% |    51.3 |  65.7 | 56.1% | line.12
+4|||   1.7% |    82.5 |  57.5 | 41.1% | line.13
+4|||   1.1% |    56.0 |  90.0 | 61.6% | line.18
+4|||   2.4% |   118.6 |  64.4 | 35.2% | line.19
+4|||   3.9% |   191.9 |  91.1 | 32.2% | line.20
+4|||   2.2% |   107.9 |  61.1 | 36.1% | line.28
+4|||   1.0% |    48.1 |  36.9 | 43.5% | line.34
+4|||   1.1% |    56.2 |  47.8 | 46.0% | line.61
+4|||   1.6% |    81.4 |  67.6 | 45.4% | line.62
+4|||   1.9% |    91.8 |  94.2 | 50.7% | line.64
+4|||   1.7% |    85.9 |  49.1 | 36.4% | line.65
+4|||   7.6% |   377.0 | 135.0 | 26.4% | line.75
+||||==========================================================================
+||   8.1% |   399.3 |    -- |    -- | ops_par_loop_taylor_green_vortex_block0_13_kernel
+3|   8.1% |   399.2 |    -- |    -- |  Benchmark/./MPI_OpenMP/taylor_green_vortex_block0_13_kernel_omp_kernel.cpp
+||||--------------------------------------------------------------------------
+4|||   1.8% |    87.7 |  85.3 | 49.3% | line.12
+4|||   1.7% |    83.7 |  79.3 | 48.7% | line.13
+4|||   1.3% |    64.0 |  77.0 | 54.6% | line.14
+4|||   1.2% |    59.5 |  76.5 | 56.3% | line.15
+4|||   1.4% |    67.3 |  73.7 | 52.3% | line.16
+||||==========================================================================
+||   5.8% |   287.2 |    -- |    -- | ops_par_loop_taylor_green_vortex_block0_14_kernel
+3|        |         |       |       |  Benchmark/./MPI_OpenMP/taylor_green_vortex_block0_14_kernel_omp_kernel.cpp
+||||--------------------------------------------------------------------------
+4|||   1.2% |    59.2 |  55.8 | 48.6% | line.12
+4|||   1.2% |    59.4 |  52.6 | 47.0% | line.13
+4|||   1.0% |    49.8 |  44.2 | 47.0% | line.14
+4|||   1.1% |    55.8 |  46.2 | 45.3% | line.15
+4|||   1.1% |    52.1 |  37.9 | 42.1% | line.16
+||||==========================================================================
+||   5.1% |   249.5 |    -- |    -- | ops_par_loop_taylor_green_vortex_block0_0_kernel
+3|   4.4% |   216.9 |    -- |    -- |  Benchmark/./MPI_OpenMP/taylor_green_vortex_block0_0_kernel_omp_kernel.cpp
+||||--------------------------------------------------------------------------
+4|||   1.5% |    72.2 |  66.8 | 48.1% | line.12
+4|||   1.4% |    68.0 |  33.0 | 32.7% | line.16
+||||==========================================================================
+||   2.1% |   103.4 |    -- |    -- | ops_par_loop_taylor_green_vortex_block0_15_kernel
+3|        |         |       |       |  Benchmark/./MPI_OpenMP/taylor_green_vortex_block0_15_kernel_omp_kernel.cpp
+||   1.8% |    86.4 |    -- |    -- | ops_par_loop_taylor_green_vortex_block0_12_kernel
+3|   1.7% |    86.3 |    -- |    -- |  Benchmark/./MPI_OpenMP/taylor_green_vortex_block0_12_kernel_omp_kernel.cpp
+||   1.1% |    52.4 |    -- |    -- | ops_par_loop_taylor_green_vortex_block0_11_kernel
+3|        |         |       |       |  Benchmark/./MPI_OpenMP/taylor_green_vortex_block0_11_kernel_omp_kernel.cpp
+||============================================================================
+|  23.9% | 1,176.8 |    -- |    -- | MPI
+||----------------------------------------------------------------------------
+||  22.7% | 1,121.1 | 974.9 | 46.5% | MPI_Waitall
+||============================================================================
+|   5.0% |   246.8 |    -- |    -- | ETC
+||----------------------------------------------------------------------------
+||   4.1% |   202.9 | 117.1 | 36.6% | __cray_memcpy_ROME
+|=============================================================================
+
+Observation:  MPI Grid Detection
+
+    There appears to be point-to-point MPI communication in a 16 X 16 X
+    16 grid pattern. The 23.9% of the total execution time spent in MPI
+    functions might be reduced with a rank order that maximizes
+    communication between ranks on the same node. The effect of several
+    rank orders is estimated below.
+
+    A file named MPICH_RANK_ORDER.Grid was generated along with this
+    report and contains usage instructions and the Custom rank order
+    from the following table.
+
+    Rank Order    On-Node    On-Node  MPICH_RANK_REORDER_METHOD
+                 Bytes/PE  Bytes/PE%  
+                            of Total  
+                            Bytes/PE  
+
+        Custom  5.056e+12     80.40%  3
+           SMP  4.210e+12     66.94%  1
+          Fold  1.831e+12     29.11%  2
+    RoundRobin  1.755e+12     27.91%  0
+
+
+Observation:  Metric-Based Rank Order
+
+    When the use of a shared resource like memory bandwidth is unbalanced
+    across nodes, total execution time may be reduced with a rank order
+    that improves the balance.  The metric used here for resource usage
+    is: USER Samp
+
+    For each node, the metric values for the ranks on that node are
+    summed.  The maximum and average value of those sums are shown below
+    for both the current rank order and a custom rank order that seeks
+    to reduce the maximum value.
+
+    A file named MPICH_RANK_ORDER.USER_Samp was generated
+    along with this report and contains usage instructions and the
+    Custom rank order from the following table.
+
+       Rank    Node Reduction    Maximum  Average
+      Order  Metric    in Max      Value  Value
+               Imb.     Value             
+
+    Current   2.95%            4.606e+05  4.470e+05
+     Custom   0.02%    2.932%  4.471e+05  4.470e+05
+
+
+Observation:  MPI Hybrid Rank Order
+
+    A hybrid rank order has been calculated that attempts to take both
+    the MPI communication and USER Samp resources into account.
+    The table below shows the metric-based calculations along with the
+    final on-node bytes/PE value.
+
+    A file named MPICH_RANK_ORDER.USER_Samp_hybrid was generated
+    along with this report and contains usage instructions for this
+    custom rank order.
+
+       Rank    Node Reduction    Maximum    Average  On-Node
+      Order  Metric    in Max      Value      Value  Bytes/PE%
+               Imb.     Value                        of Total
+                                                     Bytes/PE
+
+    Current   2.95%            4.606e+05  4.470e+05  66.94%
+     Custom   1.42%     1.55%  4.534e+05  4.470e+05  75.88%
+
+
+Observation:  MPI utilization
+
+    The time spent processing MPI communications is relatively high and
+    not evenly balanced over all PEs.  Functions and callsites
+    responsible for consuming the most time can be found in the table
+    generated by pat_report -O callers+src (within the MPI group).
+
+
+Notes for table 3:
+
+  This table shows memory traffic for numa nodes, taking for each numa
+    node the maximum value across nodes. It also shows the balance in
+    memory traffic by showing the top 3 and bottom 3 node values.
+  For further explanation, see the "General table notes" below,
+    or use:  pat_report -v -O mem_bw ...
+
+Table 3:  Memory Bandwidth by Numanode
+
+   Memory |     Read |    Write |    Thread |  Memory |  Memory | Numanode
+  Traffic |   Memory |   Memory |      Time | Traffic | Traffic |  Node Id=[max3,min3]
+   GBytes |  Traffic |  Traffic |           |  GBytes |       / |   PE=HIDE
+          |   GBytes |   GBytes |           |   / Sec | Nominal | 
+          |          |          |           |         |    Peak | 
+|-----------------------------------------------------------------------------
+|  1202.92 |  1141.80 |    61.12 | 52.765747 |   22.80 |   11.1% | numanode.0
+||----------------------------------------------------------------------------
+||  1241.97 |  1177.50 |    64.48 | 52.663981 |   23.58 |   11.5% | nid.4812
+||  1239.35 |  1177.71 |    61.64 | 52.666995 |   23.53 |   11.5% | nid.4789
+||  1237.76 |  1176.38 |    61.39 | 52.657804 |   23.51 |   11.5% | nid.4795
+||  1199.74 |  1140.71 |    59.03 | 52.670837 |   22.78 |   11.1% | nid.4811
+||  1196.40 |  1137.46 |    58.94 | 52.673487 |   22.71 |   11.1% | nid.4807
+||  1185.14 |  1125.80 |    59.34 | 52.655844 |   22.51 |   11.0% | nid.4809
+||============================================================================
+|  1215.20 |  1152.45 |    62.74 | 52.764652 |   23.03 |   11.2% | numanode.1
+||----------------------------------------------------------------------------
+||  1245.41 |  1184.32 |    61.09 | 52.658905 |   23.65 |   11.5% | nid.4793
+||  1242.98 |  1180.79 |    62.19 | 52.648546 |   23.61 |   11.5% | nid.4795
+||  1236.27 |  1176.02 |    60.25 | 52.660018 |   23.48 |   11.5% | nid.4799
+||  1195.98 |  1138.01 |    57.97 | 52.648570 |   22.72 |   11.1% | nid.4782
+||  1194.91 |  1136.95 |    57.96 | 52.648194 |   22.70 |   11.1% | nid.4802
+||  1192.66 |  1131.11 |    61.55 | 52.656343 |   22.65 |   11.1% | nid.4761
+||============================================================================
+|  1221.61 |  1156.26 |    65.35 | 52.763432 |   23.15 |   11.3% | numanode.2
+||----------------------------------------------------------------------------
+||  1243.69 |  1177.20 |    66.49 | 52.658179 |   23.62 |   11.5% | nid.4782
+||  1240.05 |  1180.07 |    59.98 | 52.650805 |   23.55 |   11.5% | nid.4791
+||  1238.69 |  1179.20 |    59.49 | 52.664788 |   23.52 |   11.5% | nid.4781
+||  1195.75 |  1137.45 |    58.30 | 52.647019 |   22.71 |   11.1% | nid.4814
+||  1193.32 |  1135.73 |    57.58 | 52.662578 |   22.66 |   11.1% | nid.4811
+||  1190.32 |  1134.19 |    56.12 | 52.650729 |   22.61 |   11.0% | nid.4815
+||============================================================================
+|  1226.40 |  1157.98 |    68.42 | 52.757513 |   23.25 |   11.4% | numanode.3
+||----------------------------------------------------------------------------
+||  1242.07 |  1178.42 |    63.66 | 52.658957 |   23.59 |   11.5% | nid.4792
+||  1241.93 |  1181.49 |    60.44 | 52.659790 |   23.58 |   11.5% | nid.4804
+||  1241.00 |  1180.20 |    60.80 | 52.660826 |   23.57 |   11.5% | nid.4791
+||  1195.63 |  1136.38 |    59.26 | 52.646071 |   22.71 |   11.1% | nid.4807
+||  1192.87 |  1135.27 |    57.59 | 52.652039 |   22.66 |   11.1% | nid.4813
+||  1191.52 |  1136.06 |    55.47 | 52.648647 |   22.63 |   11.1% | nid.4814
+||============================================================================
+|  1199.07 |  1135.93 |    63.14 | 52.745685 |   22.73 |   11.1% | numanode.4
+||----------------------------------------------------------------------------
+||  1236.61 |  1174.57 |    62.04 | 52.666189 |   23.48 |   11.5% | nid.4796
+||  1233.72 |  1174.38 |    59.34 | 52.671865 |   23.42 |   11.4% | nid.4808
+||  1233.59 |  1171.73 |    61.86 | 52.662363 |   23.42 |   11.4% | nid.4804
+||  1184.39 |  1127.91 |    56.48 | 52.670310 |   22.49 |   11.0% | nid.4790
+||  1181.24 |  1122.89 |    58.35 | 52.653408 |   22.43 |   11.0% | nid.4801
+||  1173.66 |  1117.50 |    56.16 | 52.654065 |   22.29 |   10.9% | nid.4814
+||============================================================================
+|  1206.71 |  1143.49 |    63.23 | 52.739063 |   22.88 |   11.2% | numanode.5
+||----------------------------------------------------------------------------
+||  1245.09 |  1179.97 |    65.12 | 52.663975 |   23.64 |   11.5% | nid.4813
+||  1242.12 |  1174.04 |    68.08 | 52.739063 |   23.55 |   11.5% | nid.4798
+||  1237.94 |  1177.75 |    60.19 | 52.666706 |   23.51 |   11.5% | nid.4805
+||  1186.58 |  1127.77 |    58.81 | 52.672428 |   22.53 |   11.0% | nid.4800
+||  1181.87 |  1123.51 |    58.35 | 52.666707 |   22.44 |   11.0% | nid.4791
+||  1179.02 |  1122.41 |    56.61 | 52.665164 |   22.39 |   10.9% | nid.4795
+||============================================================================
+|  1202.95 |  1141.91 |    61.03 | 52.753304 |   22.80 |   11.1% | numanode.6
+||----------------------------------------------------------------------------
+||  1242.01 |  1180.62 |    61.39 | 52.648112 |   23.59 |   11.5% | nid.4763
+||  1241.66 |  1180.60 |    61.06 | 52.654787 |   23.58 |   11.5% | nid.4781
+||  1240.42 |  1178.80 |    61.62 | 52.650364 |   23.56 |   11.5% | nid.4813
+||  1192.24 |  1135.44 |    56.80 | 52.647620 |   22.65 |   11.1% | nid.4767
+||  1180.00 |  1123.71 |    56.29 | 52.662651 |   22.41 |   10.9% | nid.4790
+||  1174.74 |  1121.28 |    53.46 | 52.656348 |   22.31 |   10.9% | nid.4814
+||============================================================================
+|  1225.60 |  1164.12 |    61.48 | 52.747218 |   23.24 |   11.3% | numanode.7
+||----------------------------------------------------------------------------
+||  1246.94 |  1181.25 |    65.70 | 52.662701 |   23.68 |   11.6% | nid.4781
+||  1241.03 |  1183.87 |    57.15 | 52.651094 |   23.57 |   11.5% | nid.4789
+||  1238.05 |  1182.34 |    55.71 | 52.662184 |   23.51 |   11.5% | nid.4763
+||  1191.52 |  1135.39 |    56.13 | 52.666675 |   22.62 |   11.0% | nid.4761
+||  1190.13 |  1132.80 |    57.33 | 52.653846 |   22.60 |   11.0% | nid.4792
+||  1185.39 |  1132.35 |    53.04 | 52.651347 |   22.51 |   11.0% | nid.4797
+|=============================================================================
+
+Notes for table 4:
+
+  This table shows energy and power usage for the nodes with the
+    maximum, mean, and minimum usage, as well as the sum of usage over
+    all nodes.
+    Energy and power for accelerators is also shown, if applicable.
+  For further explanation, see the "General table notes" below,
+    or use:  pat_report -v -O program_energy ...
+
+Table 4:  Program energy and power usage (from Cray PM)
+
+      Node | Node Power |   Process | Node Id=[mmm]
+    Energy |        (W) |      Time |  PE=HIDE
+       (J) |            |           | 
+          
+ 1,001,228 | 18,986.045 | 52.734942 | Total
+|--------------------------------------------------
+|    32,099 |    608.712 | 52.732666 | nid.4799
+|    31,292 |    593.407 | 52.732758 | nid.4790
+|    29,988 |    568.699 | 52.730892 | nid.4813
+|==================================================
+
+Notes for table 5:
+
+  This table show the average time and number of bytes read from each
+    input file, taking the average over the number of ranks that read
+    from the file.  It also shows the number of read operations, and
+    average rates.
+  For further explanation, see the "General table notes" below,
+    or use:  pat_report -v -O read_stats ...
+
+Table 5:  File Input Stats by Filename
+
+
+    No File Name had data that satisfied the selection criteria.
+
+
+Notes for table 6:
+
+  This table show the average time and number of bytes written to each
+    output file, taking the average over the number of ranks that
+    wrote to the file.  It also shows the number of write operations,
+    and average rates.
+  For further explanation, see the "General table notes" below,
+    or use:  pat_report -v -O write_stats ...
+
+Table 6:  File Output Stats by Filename
+
+      Avg |      Avg |  Write Rate | Number |       Avg | Bytes/ | File Name=!x/^/(proc|sys)/
+    Write |    Write | MiBytes/sec |     of |    Writes |   Call |  PE=HIDE
+ Time per |  MiBytes |             | Writer |       per |        | 
+   Writer |      per |             |  Ranks |    Writer |        | 
+     Rank |   Writer |             |        |      Rank |        | 
+          |     Rank |             |        |           |        | 
+|-----------------------------------------------------------------------------
+| 0.088947 | 0.002226 |    0.025022 |  4,096 | 101,294.5 |   0.02 | _UnknownFile_
+| 0.000168 | 0.000491 |    2.924650 |      1 |      17.0 |  30.29 | stdout
+| 0.000073 | 0.000649 |    8.875106 |  4,096 |      10.2 |  66.67 | /dev/infiniband/rdma_cm
+|=============================================================================
+
+Table 7:  Lustre File Information
+
+  File |    Stripe | Stripe | Stripe | OST list
+  Path |      size | offset |  count | 
+-----------------------------------------------
+ input | 1,048,576 |      0 |      1 | 7
+===============================================
+Program invocation:
+  /work/z19/z19/aturner/software/OpenSBLI/Benchmark/OpenSBLI_mpi_openmp+prof
+
+For a complete report with expanded tables and notes, run:
+  pat_report /mnt/lustre/a2fs-work2/work/z19/z19/aturner/benchmark/ofi-vs-ucx/OpenSBLI/TGV1024ss-OFI/OpenSBLI_mpi_openmp+prof+16021-4761s
+
+For help identifying callers of particular functions:
+  pat_report -O callers+src /mnt/lustre/a2fs-work2/work/z19/z19/aturner/benchmark/ofi-vs-ucx/OpenSBLI/TGV1024ss-OFI/OpenSBLI_mpi_openmp+prof+16021-4761s
+To see the entire call tree:
+  pat_report -O calltree+src /mnt/lustre/a2fs-work2/work/z19/z19/aturner/benchmark/ofi-vs-ucx/OpenSBLI/TGV1024ss-OFI/OpenSBLI_mpi_openmp+prof+16021-4761s
+
+For interactive, graphical performance analysis, run:
+  app2 /mnt/lustre/a2fs-work2/work/z19/z19/aturner/benchmark/ofi-vs-ucx/OpenSBLI/TGV1024ss-OFI/OpenSBLI_mpi_openmp+prof+16021-4761s
+
+================  End of CrayPat-lite output  ==========================
