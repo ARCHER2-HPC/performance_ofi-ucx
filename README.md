@@ -4,5 +4,8 @@ A repository for data from the comparison of performance and scaling of the Open
 
 ## Benchmarks
 
+ - [CP2K](CP2K/)
+ - [Ohio State University MPI microbenchmarks](OSU-MPI/)
  - [OpenSBLI](OpenSBLI/)
+ - [VASP](VASP/)
  
