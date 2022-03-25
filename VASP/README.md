@@ -1,6 +1,6 @@
 # VASP
 
-# VASP Benchmark Information
+## VASP Benchmark Information
 
 DFT TiO2 benchmark. This benchmark was originally sourced from the UK Materials Modelling Hub. Thanks to
 them for sharing this benchmark.
@@ -19,7 +19,7 @@ Performance is measured by the timing for `LOOP+` from the OUTCAR file.
    - [OpenFabrics](OFI/)
    - [UCX](UCX/)
 
-### Compiling VASP 6.3.0
+## Compiling VASP 6.3.0
 
 These instructions are for compiling VASP 6.3.x on [ARCHER2](https://www.archer2.ac.uk)
 using the GCC compilers including the use of OpenMP
