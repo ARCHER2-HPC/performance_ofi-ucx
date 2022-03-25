@@ -78,12 +78,10 @@ def get_perf_dict(filename, cpn):
 
     return resdict
 
-def get_perf_stats(df, threads, stat, writestats=False):
-    query = '(Threads == {0})'.format(threads)
-    df_q = df.query(query)
-    df_num = df_q.drop(['File', 'Date'], 1)
+def get_perf_stats(df, stat, writestats=False):
+    print(df)
     groupf = {'Perf':['min','median','max','mean'], 'Count':'sum'}
-    df_group = df_num.sort_values(by='Nodes').groupby(['Nodes','Cores']).agg(groupf)
+    df_group = df.sort_values(by='Nodes').groupby(['Nodes','Cores']).agg(groupf)
     if writestats:
         print(df_group)
     perf = df_group['Perf',stat].tolist()

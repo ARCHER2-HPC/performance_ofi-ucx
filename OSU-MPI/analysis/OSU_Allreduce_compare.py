@@ -60,7 +60,7 @@ for size in sizelist:
 # In[7]:
 
 
-nodelist = [1, 8, 32]
+nodelist = [1, 8, 32, 128]
 # Plot performance
 for node in nodelist:
     print("Nodes: ", size)
