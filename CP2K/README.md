@@ -126,26 +126,23 @@ gcc/9.3.0
 ```
 module restore
 module load PrgEnv-gnu
-module load gcc/9.3.0
 module load cray-fftw
 module load cray-python
+module load cpe/21.09
+module load gcc/9.3.0
+export LD_LIBRARY_PATH=$CRAY_LD_LIBRARY_PATH:$LD_LIBRARY_PATH
 ```
 
-Note that we use gcc 9.3.0 as currently the libint build fails with GCC 10.x.
+Note that we use gcc 9.3.0 as currently the libint build fails with GCC 11.x.
 
 The full set of loaded modules at compile time:
 
 ```
-
 Currently Loaded Modules:
-  1) craype/2.7.6                                9) epcc-setup-env
-  2) craype-x86-rome                            10) load-epcc-module
-  3) libfabric/1.11.0.4.71                      11) PrgEnv-gnu/8.0.0
-  4) craype-network-ofi                         12) gcc/9.3.0
-  5) perftools-base/21.02.0                     13) cray-mpich/8.1.4
-  6) xpmem/2.2.40-7.0.1.0_2.7__g1d7a24d.shasta  14) cray-python/3.8.5.0
-  7) cray-libsci/21.04.1.1                      15) cray-fftw/3.3.8.9
-  8) bolt/0.7
+  1) cpe/21.09            5) libfabric/1.11.0.4.71   9) bolt/0.7          13) cray-python/3.9.4.1
+  2) cray-fftw/3.3.8.11   6) craype-network-ofi     10) epcc-setup-env    14) gcc/9.3.0
+  3) craype/2.7.10        7) cray-dsmml/0.2.1       11) load-epcc-module  15) cray-mpich/8.1.9
+  4) craype-x86-rome      8) cray-libsci/21.08.1.2  12) PrgEnv-gnu/8.1.0
 ```
 
 ### Set `CP2K_ROOT`

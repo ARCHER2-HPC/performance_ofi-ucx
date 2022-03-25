@@ -45,17 +45,22 @@ Setup correct modules
 ---------------------
 
 ```bash
+module restore
 module load PrgEnv-gnu
 module load cray-fftw
+module load cpe/21.09
+export LD_LIBRARY_PATH=$CRAY_LD_LIBRARY_PATH:$LD_LIBRARY_PATH
 ```
 
 The loaded module list when these instructions were written was:
 
 ```bash
 Currently Loaded Modules:
-  1) gcc/10.2.0        4) libfabric/1.11.0.4.71    7) xpmem/2.2.40-7.0.1.0_2.7__g1d7a24d.shasta  10) bolt/0.7          13) PrgEnv-gnu/8.0.0
-  2) craype/2.7.6      5) craype-network-ofi       8) cray-mpich/8.1.4                           11) epcc-setup-env
-  3) craype-x86-rome   6) perftools-base/21.02.0   9) cray-libsci/21.04.1.1                      12) load-epcc-module 
+  1) cpe/21.09            6) libfabric/1.11.0.4.71  11) bolt/0.7
+  2) cray-fftw/3.3.8.11   7) craype-network-ofi     12) epcc-setup-env
+  3) gcc/11.2.0           8) cray-dsmml/0.2.1       13) load-epcc-module
+  4) craype/2.7.10        9) cray-mpich/8.1.9       14) PrgEnv-gnu/8.1.0
+  5) craype-x86-rome     10) cray-libsci/21.08.1.2
 ```
 
 Create makefile.include
