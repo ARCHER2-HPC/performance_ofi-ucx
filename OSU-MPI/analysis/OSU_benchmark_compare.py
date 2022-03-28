@@ -1,5 +1,5 @@
 
-
+import sys
 import numpy as np
 import pandas as pd
 import matplotlib as mpl
@@ -20,7 +20,7 @@ from utilities import filemanip
 from synthanalysis import osumpi
 
 
-benchmark = "osu_allreduce"
+benchmark = sys.argv[1].strip()
 systems = ['OFI',
            'UCX']
 nodelist = [1, 2, 4, 8, 16, 32, 64, 128]
