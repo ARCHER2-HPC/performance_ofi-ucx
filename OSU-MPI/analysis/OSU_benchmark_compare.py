@@ -38,7 +38,7 @@ osumpi.get_perf_stats(osu_df)
 
 
 
-sizelist = [4, 131072, 1048576]
+sizelist = [4, 8192, 131072, 1048576]
 # Plot performance
 for size in sizelist:
     print("Size: ", size)
@@ -55,10 +55,6 @@ for size in sizelist:
     plt.legend(loc='best')
     plt.show()
     
-
-
-# In[7]:
-
 
 nodelist = [1, 8, 32, 128]
 # Plot performance
