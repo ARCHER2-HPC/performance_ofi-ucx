@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import matplotlib as mpl
 from matplotlib import pyplot as plt
-mpl.rcParams['figure.figsize'] = (12,4)
+mpl.rcParams['figure.figsize'] = (6,3)
 import seaborn as sns
 sns.set_style("white", {"font.family": "serif"})
 
@@ -38,7 +38,7 @@ osumpi.get_perf_stats(osu_df)
 
 
 
-sizelist = [4, 8192, 131072, 1048576]
+sizelist = [4, 1024, 8192, 32768, 131072, 1048576]
 # Plot performance
 for size in sizelist:
     print("Size: ", size)
@@ -49,11 +49,12 @@ for size in sizelist:
         print(nodes, perf)
         plt.plot(nodes, perf, label=f'{system}', alpha=0.6)
     sns.despine()
+    plt.yscale('log', base=10)
     plt.xlabel("Nodes")
     plt.ylabel("Mean timing (us)")
-    plt.title(f'{benchmark} performance, {size} bytes')
     plt.legend(loc='best')
-    plt.show()
+    plt.tight_layout()
+    plt.savefig(f'{benchmark}_{size}bytes.png', dpi=300)
     
 
 nodelist = [1, 8, 32, 128]
@@ -68,11 +69,12 @@ for node in nodelist:
         plt.plot(sizes, perf, label=f'{system}', alpha=0.6)
     sns.despine()
     plt.xscale('log', base=2)
+    plt.yscale('log', base=10)
     plt.xlabel("Message size")
     plt.ylabel("Mean Timing (us)")
-    plt.title(f'{benchmark} performance, {node} nodes')
     plt.legend(loc='best')
-    plt.show()
+    plt.tight_layout()
+    plt.savefig(f'{benchmark}_{node}nodes.png', dpi=300)
 
 
 
