@@ -86,7 +86,7 @@ def get_perf_stats(df, stat, threads=None, writestats=False, plot_cores=False):
     if threads is not None:
        query = '(Threads == {0})'.format(threads)
        df = df.query(query)
-    df_num = df.drop(['File', 'Date'], 1)
+    df_num = df.drop(['File', 'Date'], 1).astype(float)
     groupf = {'Perf':['min','median','max','mean'], 'Count':'sum'}
     df_group = df_num.sort_values(by='Nodes').groupby(['Nodes','Cores','Threads']).agg(groupf)
     if writestats:

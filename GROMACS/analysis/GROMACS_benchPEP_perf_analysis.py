@@ -2,9 +2,7 @@
 # 
 # This script compares the performance of the GROMACS benchPEP benchmark between OFI and UCX transport layers on ARCHER2.
 #  
-# We compute performance using the time for the "LOOP+" cycle as reported by gromacs.
-# 
-# Performance is plotted as LOOP+ per second (i.e. inverse of LOOP+ cycle time in seconds).
+# We report performance using the ns/day values reported by GROMACS.
 # 
 
 
