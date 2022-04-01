@@ -16,7 +16,10 @@ Performance is measured as the number of simulation time steps completed per uni
 
 ## Results
 
-[To Be Provided]
+* [Performance analysis script](analysis/NEMO_GYRE_PISCES_perf_analysis.py)
+* Calculation:
+   - [OpenFabrics](OFI/)
+   - [UCX](UCX/)
 
 
 ## Building NEMO 4.0.6 for the ``GYRE_PISCES`` Configuration
