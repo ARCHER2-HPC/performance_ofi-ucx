@@ -61,6 +61,7 @@ for res in results:
 fig1, ax1 = plt.subplots()
 for res in results:
     ax1.plot(nodes[res], perf_nodes[res], '-+', label=names[res], alpha=0.6)
+ax1.set_title('NEMO 4.0.6 GYRE_PISCES - Strong Scaling')
 ax1.set_xlabel('Nodes')
 ax1.set_ylabel('Performance (simulation timesteps per sec)')
 ax1.legend(loc='best')
