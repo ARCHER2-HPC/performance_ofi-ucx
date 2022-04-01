@@ -3,28 +3,30 @@
 NEMO is an oceangraphic modelling code. Its name is an acronym for Nucleus for European Modelling of the Ocean.
 See [https://www.nemo-ocean.eu/](https://www.nemo-ocean.eu/) for further details.
 
-## Gyre PISCES Benchmark Information
 
-Gyre PISCES is an idealized configuration representing a double gyre system in the northern hemisphere.
+## NEMO Benchmark Information
+
+The ``GYRE_PISCES`` benchmark is an idealized configuration representing a double gyre system in the northern hemisphere.
 
 The term PISCES is an acronym for Pelagic Interaction Scheme for Carbon and Ecosystem Studies.
-More about the NEMO Gyre PISCES benchmark can be found at [https://forge.ipsl.jussieu.fr/nemo/chrome/site/doc/NEMO/guide/html/cfgs.html#gyre-pisces](https://forge.ipsl.jussieu.fr/nemo/chrome/site/doc/NEMO/guide/html/cfgs.html#gyre-pisces).
+More about the NEMO ``GYRE_PISCES`` benchmark can be found at [https://forge.ipsl.jussieu.fr/nemo/chrome/site/doc/NEMO/guide/html/cfgs.html#gyre-pisces](https://forge.ipsl.jussieu.fr/nemo/chrome/site/doc/NEMO/guide/html/cfgs.html#gyre-pisces).
 
 Performance is measured as the number of simulation time steps completed per unit of runtime.
 
+
 ## Results
 
-## Compiling NEMO 4.0.6 for GYRE PISCES Configuration
+[To Be Provided]
 
-First, you need to build XIOS 2.5. Instructions for the Cray, GCC and AMD (AOCC) compilers
+
+## Building NEMO 4.0.6 for the ``GYRE_PISCES`` Configuration
+
+First, you need to build XIOS 2.5. Instructions for the Cray, GCC and AMD (AOCC) compilers (CPE 21.09)
 can be found at [https://github.com/hpc-uk/build-instructions/tree/main/utils/XIOS](https://github.com/hpc-uk/build-instructions/tree/main/utils/XIOS).
 
-
-Building NEMO 4.0.6 with CPE 21.09
-----------------------------------
-
 The following instructions show how to set the environment suitable for building NEMO 4.0.6
-with either the Cray compiler environment (CCE 12) or the GNU compiler environment (GCC 11).
+with either the Cray compiler environment (CCE 12) or the GNU compiler environment (GCC 11)
+provided by CPE 21.09.
 
 Setting the environment
 -----------------------
@@ -70,7 +72,7 @@ Notice that for ``PRFX`` and  ``XIOS_DIR`` you should replace ``/path/to`` with 
 suitable for your system.
 
 Next, download the NEMO source code and build using your chosen compiler suite for
-a specifc NEMO configuration such as Gyre PISCES.
+a specifc NEMO configuration such as ``GYRE_PISCES``.
 
 Downloading the NEMO source
 ---------------------------
@@ -84,7 +86,7 @@ svn co https://forge.ipsl.jussieu.fr/${NEMO_LABEL}/svn/${NEMO_LABEL^^}/releases/
 sed -i "s/FC_MODSEARCH => '',/FC_MODSEARCH => '-J',/g" ${BUILD_PATH}/ext/FCM/lib/Fcm/Config.pm
 ```
 
-Building NEMO for the GYRE PISCES configuration
+Building NEMO for the GYRE_PISCES configuration
 -----------------------------------------------
 
 Please ensure that a suitable ``fcm`` has been copied to ``${BUILD_PATH}/arch/``
@@ -135,8 +137,7 @@ These changes to the settings within ``namelist_cfg`` enable the ``GYRE_PISCES``
 benchmark to focus on NEMO compute.
 
 
-Running NEMO 4.0.6 with GYRE_PISCES
------------------------------------
+## Running NEMO 4.0.6 with GYRE_PISCES configuration
 
 A number of Slurm submission scripts can be found in the [submit folder](submit/).
 This collection covers twelve separate cases, two compiler suites (CCE 12 or GCC 11),
