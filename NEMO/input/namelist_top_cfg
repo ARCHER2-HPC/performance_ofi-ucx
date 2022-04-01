@@ -1,0 +1,72 @@
+!!>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+!! NEMO/TOP :   Configuration namelist : used to overwrite defaults values defined in SHARED/namelist_top_ref
+!>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+!-----------------------------------------------------------------------
+&namtrc_run      !   run information
+!-----------------------------------------------------------------------
+/
+!-----------------------------------------------------------------------
+&namtrc          !   tracers definition
+!-----------------------------------------------------------------------
+   jp_bgc        =  6
+   !
+   ln_pisces     =  .true.
+   ln_age        =  .false.
+   ln_cfc11      =  .false.
+   ln_cfc12      =  .false.
+   ln_c14        =  .false.
+   ln_my_trc     =  .false.
+   !_____________!__________!________________________________!______________!________________!
+   !             !   name   !           title of the field   !   units      ! init from file ! 
+   sn_tracer(1)   = 'DET'   , 'Detritus                   '  , 'mmole-N/m3' ,  .false.    
+   sn_tracer(2)   = 'ZOO'   , 'Zooplankton concentration  '  , 'mmole-N/m3' ,  .false.   
+   sn_tracer(3)   = 'PHY'   , 'Phytoplankton concentration'  , 'mmole-N/m3' ,  .false.  
+   sn_tracer(4)   = 'NO3'   , 'Nitrate concentration      '  , 'mmole-N/m3' ,  .false. 
+   sn_tracer(5)   = 'NH4'   , 'Ammonium concentration     '  , 'mmole-N/m3' ,  .false.   
+   sn_tracer(6)   = 'DOM'   , 'Dissolved organic matter   '  , 'mmole-N/m3' ,  .false.  
+/
+!-----------------------------------------------------------------------
+&namage          !   AGE 
+!-----------------------------------------------------------------------
+/
+!-----------------------------------------------------------------------
+&namtrc_dta      !    Initialisation from data input file
+!-----------------------------------------------------------------------
+/
+!-----------------------------------------------------------------------
+&namtrc_adv      !   advection scheme for passive tracer                (default: NO selection)
+!-----------------------------------------------------------------------
+   ln_trcadv_fct =  .true.   !  FCT scheme
+      nn_fct_h   =  2               !  =2/4, horizontal 2nd / 4th order
+      nn_fct_v   =  2               !  =2/4, vertical   2nd / COMPACT 4th order
+/
+!-----------------------------------------------------------------------
+&namtrc_ldf      !   lateral diffusion scheme for passive tracer        (default: NO selection)
+!-----------------------------------------------------------------------
+   ln_trcldf_tra   =  .true.     !  use active tracer setting
+/
+!-----------------------------------------------------------------------
+&namtrc_rad      !  treatment of negative concentrations 
+!-----------------------------------------------------------------------
+   ln_trcrad   =  .false.  !  artificially correct negative concentrations (T) or not (F)
+/
+!-----------------------------------------------------------------------
+&namtrc_dmp      !   passive tracer newtonian damping                   (ln_trcdmp=T)
+!-----------------------------------------------------------------------
+/
+!-----------------------------------------------------------------------
+&namtrc_ice      !    Representation of sea ice growth & melt effects
+!-----------------------------------------------------------------------
+/
+!-----------------------------------------------------------------------
+&namtrc_trd      !   diagnostics on tracer trends                       ('key_trdtrc')
+!----------------------------------------------------------------------
+/
+!----------------------------------------------------------------------
+&namtrc_bc       !   data for boundary conditions
+!-----------------------------------------------------------------------
+/
+!----------------------------------------------------------------------
+&namtrc_bdy      !   Setup of tracer boundary conditions
+!-----------------------------------------------------------------------
+/

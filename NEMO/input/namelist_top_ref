@@ -1,0 +1,151 @@
+!!>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+!! NEMO/TOP :   Reference namelist 
+!!>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+!!               - tracer run information                (namtrc_run)
+!!               - tracer definition                     (namtrc    )
+!!               - tracer data initialisation            (namtrc_dta)
+!!               - tracer advection                      (namtrc_adv)
+!!               - tracer lateral diffusion              (namtrc_ldf)
+!!               - tracer vertical physics               (namtrc_zdf)
+!!               - tracer newtonian damping              (namtrc_dmp)
+!!               - dynamical tracer trends               (namtrc_trd)
+!>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+!-----------------------------------------------------------------------
+&namtrc_run      !   run information
+!-----------------------------------------------------------------------
+   nn_dttrc      =  1        !  time step frequency for passive sn_tracers
+   ln_top_euler  = .false.   !  use Euler time-stepping for TOP
+   ln_rsttr      = .false.   !  start from a restart file (T) or not (F)
+   nn_rsttr      =   0       !  restart control = 0 initial time step is not compared to the restart file value
+                             !                  = 1 do not use the value in the restart file
+                             !                  = 2 calendar parameters read in the restart file
+   cn_trcrst_in  = "restart_trc"   !  suffix of pass. sn_tracer restart name (input)
+   cn_trcrst_indir = "."           !  directory from which to read input passive tracer restarts
+   cn_trcrst_out = "restart_trc"   !  suffix of pass. sn_tracer restart name (output)
+   cn_trcrst_outdir = "."          !  directory to which to write output passive tracer restarts
+/
+!-----------------------------------------------------------------------
+&namtrc          !   tracers definition
+!-----------------------------------------------------------------------
+   jp_bgc        =  0           !  Number of passive tracers of the BGC model
+   !
+   ln_pisces     =  .false.     !  Run PISCES BGC model 
+   ln_my_trc     =  .false.     !  Run MY_TRC BGC model
+   ln_age        =  .false.     !  Run the sea water age tracer
+   ln_cfc11      =  .false.     !  Run the CFC11 passive tracer
+   ln_cfc12      =  .false.     !  Run the CFC12 passive tracer
+   ln_sf6        =  .false.     !  Run the SF6 passive tracer
+   ln_c14        =  .false.     !  Run the Radiocarbon passive tracer
+   !
+   ln_trcdta     =  .false.  !  Initialisation from data input file (T) or not (F)
+   ln_trcdmp     =  .false.  !  add a damping termn (T) or not (F)
+   ln_trcdmp_clo =  .false.  !  damping term (T) or not (F) on closed seas
+   !
+   jp_dia3d      = 0         ! Number of 3D diagnostic variables
+   jp_dia2d      = 0         ! Number of 2D diagnostic variables
+   !_____________!___________!_________________________________________!____________!________________!
+   !             !    name   !           title of the field            !   units    ! init from file ! 
+!  sn_tracer(1)  = 'tracer  ', 'Tracer  Concentration                 ',   ' - '    ,   .false.
+/
+!-----------------------------------------------------------------------
+&namage          !   AGE 
+!-----------------------------------------------------------------------
+   rn_age_depth      = 10            ! depth over which age tracer reset to zero
+   rn_age_kill_rate  = -0.000138888  !  = -1/7200 recip of relaxation timescale (s) for  age tracer shallower than age_depth
+/
+!-----------------------------------------------------------------------
+&namtrc_dta      !    Initialisation from data input file
+!-----------------------------------------------------------------------
+!                !  file name        ! frequency (hours) ! variable  ! time interp. !  clim  ! 'yearly'/ ! weights  ! rotation ! land/sea mask !
+!                !                   !  (if <0  months)  !   name    !   (logical)  !  (T/F) ! 'monthly' ! filename ! pairing  ! filename      !
+   sn_trcdta(1)  = 'data_TRC_nomask' ,        -12.       ,  'TRC'    ,    .false.   , .true. , 'yearly'  , ''       , ''       , ''
+   !
+   cn_dir        =  './'     !  root directory for the location of the data files
+/
+!-----------------------------------------------------------------------
+&namtrc_adv      !   advection scheme for passive tracer                (default: NO selection)
+!-----------------------------------------------------------------------
+   ln_trcadv_OFF =  .false.  !  No passive tracer advection
+   ln_trcadv_cen =  .false.  !  2nd order centered scheme
+      nn_cen_h   =  4               !  =2/4, horizontal 2nd order CEN / 4th order CEN
+      nn_cen_v   =  4               !  =2/4, vertical   2nd order CEN / 4th order COMPACT
+   ln_trcadv_fct =  .false.  !  FCT scheme
+      nn_fct_h   =  2               !  =2/4, horizontal 2nd / 4th order 
+      nn_fct_v   =  2               !  =2/4, vertical   2nd / COMPACT 4th order 
+   ln_trcadv_mus =  .false.  !  MUSCL scheme
+      ln_mus_ups =  .false.         !  use upstream scheme near river mouths
+   ln_trcadv_ubs =  .false.  !  UBS scheme
+      nn_ubs_v   =  2               !  =2  , vertical 2nd order FCT
+   ln_trcadv_qck =  .false.  !  QUICKEST scheme
+/
+!-----------------------------------------------------------------------
+&namtrc_ldf      !   lateral diffusion scheme for passive tracer        (default: NO selection)
+!-----------------------------------------------------------------------
+!                            !  Type of the operator:
+   ln_trcldf_OFF   =  .false.    !  No explicit diffusion
+   ln_trcldf_tra   =  .false.    !  use active tracer setting
+   !                         !  Coefficient (defined with namtra_ldf coefficient)
+   rn_ldf_multi    = 1.          !  multiplier of aht for TRC mixing coefficient
+   rn_fact_lap     = 1.          !  Equatorial enhanced zonal eddy diffusivity (lap only)
+/
+!-----------------------------------------------------------------------
+&namtrc_rad      !  treatment of negative concentrations 
+!-----------------------------------------------------------------------
+   ln_trcrad     =  .true.   !  artificially correct negative concentrations (T) or not (F)
+/
+!-----------------------------------------------------------------------
+&namtrc_snk      !  Sedimentation of particles
+!-----------------------------------------------------------------------
+   nitermax      =  2   !  number of iterations for sedimentation
+/
+!-----------------------------------------------------------------------
+&namtrc_dmp      !   passive tracer newtonian damping                   (ln_trcdmp=T)
+!-----------------------------------------------------------------------
+   nn_zdmp_tr    =    1      !  vertical   shape =0    damping throughout the water column
+                             !                   =1 no damping in the mixing layer (kz  criteria)
+                             !                   =2 no damping in the mixed  layer (rho crieria)
+   cn_resto_tr   = 'resto_tr.nc'    !  create a damping.coeff NetCDF file (=1) or not (=0)
+/
+!-----------------------------------------------------------------------
+&namtrc_ice      !    Representation of sea ice growth & melt effects
+!-----------------------------------------------------------------------
+   nn_ice_tr     =  -1       !  tracer concentration in sea ice 
+                             !    =-1 (no vvl: identical cc in ice and ocean / vvl: cc_ice = 0)
+                             !    = 0 (no vvl: cc_ice = zero / vvl: cc_ice = )
+                             !    = 1 prescribed to a namelist value (implemented in pisces only)
+/
+!-----------------------------------------------------------------------
+&namtrc_trd      !   diagnostics on tracer trends                       ('key_trdtrc')
+!                          or mixed-layer trends                        ('key_trdmld_trc')
+!----------------------------------------------------------------------
+   nn_trd_trc    =  5475     !  time step frequency and tracers trends
+   nn_ctls_trc   =   0       !  control surface type in mixed-layer trends (0,1 or n<jpk)
+   rn_ucf_trc    =   1       !  unit conversion factor (=1 -> /seconds ; =86400. -> /day)
+   ln_trdmxl_trc_restart = .false.   !  restart for ML diagnostics
+   ln_trdmxl_trc_instant = .true.    !  flag to diagnose trends of instantantaneous or mean ML T/S
+   cn_trdrst_trc_in  = 'restart_trd' !  suffix of pass. tracer trends restart name (input)
+   cn_trdrst_trc_out = 'restart_trd' !  suffix of pass. tracer trends restart name (output)
+   ln_trdtrc( 1) = .true.
+   ln_trdtrc( 2) = .true.
+   ln_trdtrc(23) = .true.
+/
+!----------------------------------------------------------------------
+&namtrc_bc       !   data for boundary conditions
+!-----------------------------------------------------------------------
+   cn_dir_sbc    =  './'     !  root directory for the location of SURFACE data files
+   cn_dir_cbc    =  './'     !  root directory for the location of COASTAL data files
+   cn_dir_obc    =  './'     !  root directory for the location of OPEN data files
+   ln_rnf_ctl    = .false.   !  Remove runoff dilution on tracers with absent river load
+   rn_bc_time    =  86400.   !  Time scaling factor for SBC and CBC data (seconds in a day)
+/
+!----------------------------------------------------------------------
+&namtrc_bdy      !   Setup of tracer boundary conditions
+!-----------------------------------------------------------------------
+   cn_trc_dflt   = 'neumann' !  OBC applied by default to all tracers
+   cn_trc        = 'none'    !  Boundary conditions used for tracers with data files (selected in namtrc)
+
+   nn_trcdmp_bdy = 0         !  Use damping timescales defined in nambdy of namelist
+                             !  = 0 NO damping of tracers at open boudaries
+                             !  = 1 Only for tracers forced with external data
+                             !  = 2 Damping applied to all tracers
+/
