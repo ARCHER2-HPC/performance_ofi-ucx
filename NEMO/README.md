@@ -131,8 +131,8 @@ In addition, The ``nn_write`` field is set to a number greater than 1001 in orde
 avoid writing any output files during the simulation. And setting ``nn_stock = -1``
 prevents any restart files from being written.
 
-These changes to the settings within ``namelist_cfg`` are so that the ``GYRE_PISCES``
-benchmark will focus on NEMO compute.
+These changes to the settings within ``namelist_cfg`` enable the ``GYRE_PISCES``
+benchmark to focus on NEMO compute.
 
 
 Running NEMO 4.0.6 with GYRE_PISCES
@@ -146,7 +146,7 @@ It is necessary to have a submission script for a specific node count because,
 in order to run NEMO efficiently, one must be careful about the placement
 of ocean processes (NEMO) and I/O servers (XIOS) across the compute node.
 
-[Previous NEMO performance investigations](https://docs.archer2.ac.uk/research-software/nemo/nemo/) have shown that NEMO runs best if there
+[Previous NEMO performance investigations](https://docs.archer2.ac.uk/research-software/nemo/nemo/#a-performance-investigation) have shown that NEMO runs best if there
 are two I/O servers per node, spaced such that each I/O server occupies its
 own NUMA region (on ARCHER2, a NUMA region has 16 cores). The ocean
 processes are placed across the remaining six NUMA regions such that every
