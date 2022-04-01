@@ -170,3 +170,5 @@ Each submission script will require editing before you can submit a job.
 First, you must replace occurrences of ``<budget code>`` with your actual
 budget code, and second, you must replace any occurrence of ``/path/to`` with
 a path that makes sense for your setup.
+
+Lastly, the ``GYRE_PISCES`` input data files can be found in the [input folder](input/).
