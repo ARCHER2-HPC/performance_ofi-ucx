@@ -4,7 +4,7 @@
 
 GROMACS DNA benchmark, available from the [CASTEP website](http://www.castep.org/CASTEP/DNA).
 
-Performance is measured by the timing for 10 SCF loops to complete as given in the `polyA20-no-wat.castep` output file.
+Performance is the mean of 10 SCF loops given in the `polyA20-no-wat.castep` output files, discarding the longest and shortest loops.
 
 ## Results
 
