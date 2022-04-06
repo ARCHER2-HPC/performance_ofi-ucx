@@ -1,6 +1,6 @@
 # NEMO 4.0.6
 
-NEMO is an oceangraphic modelling code. Its name is an acronym for Nucleus for European Modelling of the Ocean.
+NEMO is an oceanographic modelling code. Its name is an acronym for Nucleus for European Modelling of the Ocean.
 See [https://www.nemo-ocean.eu/](https://www.nemo-ocean.eu/) for further details.
 
 
