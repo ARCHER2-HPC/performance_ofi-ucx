@@ -2,7 +2,9 @@
 
 ## GROMACS Benchmark Information
 
-GROMACS benchPEP benchmark.
+GROMACS benchPEP benchmark from Dept. of Theoretical and Computational Biophysics,
+Max Planck Institute for Multidisciplinary Sciences, Göttingen, https://www.mpinat.mpg.de/grubmueller/bench 
+
 
 Performance is measured in the ns/day output given by the GROMACS `.log` files.
 
