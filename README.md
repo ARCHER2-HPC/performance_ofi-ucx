@@ -4,7 +4,10 @@ A repository for data from the comparison of performance and scaling of the Open
 
 ## Benchmarks
 
+ - [CASTEP](CASTEP/)
  - [CP2K](CP2K/)
+ - [GROMACS](GROMACS/)
+ - [NEMO](NEMO/)
  - [Ohio State University MPI microbenchmarks](OSU-MPI/)
  - [OpenSBLI](OpenSBLI/)
  - [VASP](VASP/)
