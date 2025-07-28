@@ -1,0 +1,243 @@
+
+Lmod is automatically replacing "cce/15.0.0" with "gcc/11.2.0".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.3.3" with "PrgEnv-gnu/8.3.3".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.23
+
+==================================================================
+#Lib:OFI
+method=MPI_Gather
+#Iteration=1
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Gather --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Gather
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=16384
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                        MPI_Gather            1        300        300   0.0002840908   0.0000578915 
+                                        MPI_Gather           10        300        300   0.0001165154   0.0000854845 
+                                        MPI_Gather          100        300        300   0.0004794664   0.0003375975 
+                                        MPI_Gather         1000        300        300   0.0020544954   0.0018402210 
+                                        MPI_Gather        10000        300        300   0.0153013071   0.0150811450 
+# Benchmark started at Fri Mar 22 10:58:51 2024
+# Execution time: 7s
+==================================================================
+#Iteration=2
+srun: Job 6010227 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 6010227
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Gather --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Gather
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=16384
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                        MPI_Gather            1        300        300   0.0002541725   0.0000586080 
+                                        MPI_Gather           10        300        300   0.0001414182   0.0000849485 
+                                        MPI_Gather          100        300        300   0.0004054807   0.0003373215 
+                                        MPI_Gather         1000        300        300   0.0019540230   0.0018056340 
+                                        MPI_Gather        10000        300        300   0.0151199712   0.0148883765 
+# Benchmark started at Fri Mar 22 10:59:06 2024
+# Execution time: 7s
+==================================================================
+#Iteration=3
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Gather --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Gather
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=16384
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                        MPI_Gather            1        300        300   0.0003184425   0.0000588890 
+                                        MPI_Gather           10        300        300   0.0001159855   0.0000898825 
+                                        MPI_Gather          100        300        300   0.0004108392   0.0003471180 
+                                        MPI_Gather         1000        300        300   0.0020729688   0.0018423615 
+                                        MPI_Gather        10000        300        300   0.0153560059   0.0150924470 
+# Benchmark started at Fri Mar 22 10:59:21 2024
+# Execution time: 6s
+==================================================================
+#Iteration=4
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Gather --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Gather
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=16384
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                        MPI_Gather            1        300        300   0.0002582442   0.0000575655 
+                                        MPI_Gather           10        300        300   0.0001173527   0.0000847740 
+                                        MPI_Gather          100        300        300   0.0004188820   0.0003370480 
+                                        MPI_Gather         1000        300        300   0.0019935178   0.0018386990 
+                                        MPI_Gather        10000        300        300   0.0153135759   0.0150806240 
+# Benchmark started at Fri Mar 22 10:59:35 2024
+# Execution time: 7s
+==================================================================
+#Iteration=5
+srun: Job 6010227 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 6010227
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Gather --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Gather
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=16384
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                        MPI_Gather            1        300        300   0.0003459008   0.0000576360 
+                                        MPI_Gather           10        300        300   0.0001308748   0.0000853190 
+                                        MPI_Gather          100        300        300   0.0004157505   0.0003422785 
+                                        MPI_Gather         1000        300        300   0.0020732712   0.0018531070 
+                                        MPI_Gather        10000        300        300   0.0151231977   0.0148083655 
+# Benchmark started at Fri Mar 22 10:59:51 2024
+# Execution time: 6s
+==================================================================
+#Iteration=6
+srun: Job 6010227 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 6010227
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Gather --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Gather
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=16384
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                        MPI_Gather            1        300        300   0.0003370725   0.0000575815 
+                                        MPI_Gather           10        300        300   0.0001206276   0.0000849945 
+                                        MPI_Gather          100        300        300   0.0004022517   0.0003401990 
+                                        MPI_Gather         1000        300        300   0.0021205604   0.0018637720 
+                                        MPI_Gather        10000        300        300   0.0153994705   0.0151030885 
+# Benchmark started at Fri Mar 22 11:00:06 2024
+# Execution time: 6s
+==================================================================
+#Iteration=7
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Gather --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Gather
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=16384
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                        MPI_Gather            1        300        300   0.0003307588   0.0000577320 
+                                        MPI_Gather           10        300        300   0.0001319791   0.0000848550 
+                                        MPI_Gather          100        300        300   0.0004140905   0.0003386255 
+                                        MPI_Gather         1000        300        300   0.0020884200   0.0018541620 
+                                        MPI_Gather        10000        300        300   0.0154423995   0.0150981380 
+# Benchmark started at Fri Mar 22 11:00:20 2024
+# Execution time: 7s
+==================================================================

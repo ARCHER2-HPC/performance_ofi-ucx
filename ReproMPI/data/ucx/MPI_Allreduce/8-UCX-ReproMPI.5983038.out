@@ -1,0 +1,262 @@
+
+Lmod is automatically replacing "craype-network-ofi" with "craype-network-ucx".
+
+
+Inactive Modules:
+  1) cray-mpich
+
+==================================================================
+#Lib:UCX
+method=MPI_Allreduce
+#Iteration=1
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Allreduce --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=200 --summary=median,mean
+#MPI calls:
+#	MPI_Allreduce
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=200
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                     MPI_Allreduce            1        200        200   0.0000246504   0.0000209060 
+                                     MPI_Allreduce           10        200        200   0.0000229048   0.0000220775 
+                                     MPI_Allreduce          100        200        200   0.0000314098   0.0000292470 
+                                     MPI_Allreduce         1000        200        200   0.0000611539   0.0000564795 
+                                     MPI_Allreduce        10000        200        200   0.0001184477   0.0000825090 
+                                     MPI_Allreduce       100000        200        200   0.0004438417   0.0003859725 
+                                     MPI_Allreduce      1000000        200        200   0.0035690953   0.0034245360 
+# Benchmark started at Tue Mar 19 14:41:02 2024
+# Execution time: 3s
+==================================================================
+#Iteration=2
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Allreduce --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=200 --summary=median,mean
+#MPI calls:
+#	MPI_Allreduce
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=200
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                     MPI_Allreduce            1        200        200   0.0000248565   0.0000209205 
+                                     MPI_Allreduce           10        200        200   0.0000240263   0.0000217820 
+                                     MPI_Allreduce          100        200        200   0.0000305192   0.0000294265 
+                                     MPI_Allreduce         1000        200        200   0.0000619978   0.0000562685 
+                                     MPI_Allreduce        10000        200        200   0.0000956364   0.0000817180 
+                                     MPI_Allreduce       100000        200        200   0.0004478102   0.0003872385 
+                                     MPI_Allreduce      1000000        200        200   0.0035278894   0.0033881480 
+# Benchmark started at Tue Mar 19 14:41:16 2024
+# Execution time: 3s
+==================================================================
+#Iteration=3
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Allreduce --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=200 --summary=median,mean
+#MPI calls:
+#	MPI_Allreduce
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=200
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                     MPI_Allreduce            1        200        200   0.0000336698   0.0000208810 
+                                     MPI_Allreduce           10        200        200   0.0000232284   0.0000220525 
+                                     MPI_Allreduce          100        200        200   0.0000301254   0.0000294220 
+                                     MPI_Allreduce         1000        200        200   0.0000625597   0.0000560080 
+                                     MPI_Allreduce        10000        200        200   0.0000971941   0.0000813870 
+                                     MPI_Allreduce       100000        200        200   0.0004453720   0.0003854940 
+                                     MPI_Allreduce      1000000        200        200   0.0036304155   0.0034356240 
+# Benchmark started at Tue Mar 19 14:41:27 2024
+# Execution time: 4s
+==================================================================
+#Iteration=4
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Allreduce --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=200 --summary=median,mean
+#MPI calls:
+#	MPI_Allreduce
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=200
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                     MPI_Allreduce            1        200        200   0.0000247295   0.0000200895 
+                                     MPI_Allreduce           10        200        200   0.0000228248   0.0000209960 
+                                     MPI_Allreduce          100        200        200   0.0000288907   0.0000276790 
+                                     MPI_Allreduce         1000        200        200   0.0000657024   0.0000555220 
+                                     MPI_Allreduce        10000        200        200   0.0000924643   0.0000818275 
+                                     MPI_Allreduce       100000        200        200   0.0004697557   0.0003871435 
+                                     MPI_Allreduce      1000000        200        200   0.0036148074   0.0034406630 
+# Benchmark started at Tue Mar 19 14:41:39 2024
+# Execution time: 3s
+==================================================================
+#Iteration=5
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Allreduce --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=200 --summary=median,mean
+#MPI calls:
+#	MPI_Allreduce
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=200
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                     MPI_Allreduce            1        200        200   0.0000243398   0.0000210365 
+                                     MPI_Allreduce           10        200        200   0.0000238349   0.0000220580 
+                                     MPI_Allreduce          100        200        200   0.0000301050   0.0000292615 
+                                     MPI_Allreduce         1000        200        200   0.0000625470   0.0000560530 
+                                     MPI_Allreduce        10000        200        200   0.0000938809   0.0000809465 
+                                     MPI_Allreduce       100000        200        200   0.0004432257   0.0003851460 
+                                     MPI_Allreduce      1000000        200        200   0.0036268166   0.0034372705 
+# Benchmark started at Tue Mar 19 14:41:50 2024
+# Execution time: 3s
+==================================================================
+#Iteration=6
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Allreduce --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=200 --summary=median,mean
+#MPI calls:
+#	MPI_Allreduce
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=200
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                     MPI_Allreduce            1        200        200   0.0000241771   0.0000197030 
+                                     MPI_Allreduce           10        200        200   0.0000225162   0.0000209055 
+                                     MPI_Allreduce          100        200        200   0.0000297491   0.0000282545 
+                                     MPI_Allreduce         1000        200        200   0.0000613919   0.0000562035 
+                                     MPI_Allreduce        10000        200        200   0.0000986587   0.0000816270 
+                                     MPI_Allreduce       100000        200        200   0.0004459644   0.0003866670 
+                                     MPI_Allreduce      1000000        200        200   0.0035959509   0.0034468840 
+# Benchmark started at Tue Mar 19 14:42:01 2024
+# Execution time: 3s
+==================================================================
+#Iteration=7
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Allreduce --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=200 --summary=median,mean
+#MPI calls:
+#	MPI_Allreduce
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=200
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                     MPI_Allreduce            1        200        200   0.0000240244   0.0000203690 
+                                     MPI_Allreduce           10        200        200   0.0000230948   0.0000215620 
+                                     MPI_Allreduce          100        200        200   0.0000301059   0.0000290715 
+                                     MPI_Allreduce         1000        200        200   0.0000620632   0.0000557275 
+                                     MPI_Allreduce        10000        200        200   0.0000967655   0.0000822690 
+                                     MPI_Allreduce       100000        200        200   0.0004423853   0.0003842460 
+                                     MPI_Allreduce      1000000        200        200   0.0036001394   0.0034454320 
+# Benchmark started at Tue Mar 19 14:42:12 2024
+# Execution time: 3s
+==================================================================

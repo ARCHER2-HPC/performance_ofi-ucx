@@ -1,0 +1,262 @@
+
+Lmod is automatically replacing "craype-network-ofi" with "craype-network-ucx".
+
+
+Inactive Modules:
+  1) cray-mpich
+
+==================================================================
+#Lib:UCX
+method=MPI_Bcast
+#Iteration=1
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Bcast --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=500 --summary=median,mean
+#MPI calls:
+#	MPI_Bcast
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=500
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                         MPI_Bcast            1        500        500   0.0000094929   0.0000081605 
+                                         MPI_Bcast           10        500        500   0.0000083867   0.0000078500 
+                                         MPI_Bcast          100        500        500   0.0000095480   0.0000083560 
+                                         MPI_Bcast         1000        500        500   0.0000187767   0.0000151990 
+                                         MPI_Bcast        10000        500        500   0.0000473321   0.0000385080 
+                                         MPI_Bcast       100000        500        500   0.0004152187   0.0004008965 
+                                         MPI_Bcast      1000000        500        500   0.0036208421   0.0035831695 
+# Benchmark started at Thu Mar 21 17:23:28 2024
+# Execution time: 4s
+==================================================================
+#Iteration=2
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Bcast --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=500 --summary=median,mean
+#MPI calls:
+#	MPI_Bcast
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=500
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                         MPI_Bcast            1        500        500   0.0000101488   0.0000084615 
+                                         MPI_Bcast           10        500        500   0.0000093172   0.0000084860 
+                                         MPI_Bcast          100        500        500   0.0000096571   0.0000090370 
+                                         MPI_Bcast         1000        500        500   0.0000182515   0.0000153290 
+                                         MPI_Bcast        10000        500        500   0.0000485332   0.0000387085 
+                                         MPI_Bcast       100000        500        500   0.0004095678   0.0004035360 
+                                         MPI_Bcast      1000000        500        500   0.0036025463   0.0036037850 
+# Benchmark started at Thu Mar 21 17:23:39 2024
+# Execution time: 3s
+==================================================================
+#Iteration=3
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Bcast --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=500 --summary=median,mean
+#MPI calls:
+#	MPI_Bcast
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=500
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                         MPI_Bcast            1        500        500   0.0000102078   0.0000082155 
+                                         MPI_Bcast           10        500        500   0.0000089670   0.0000080205 
+                                         MPI_Bcast          100        500        500   0.0000094680   0.0000085865 
+                                         MPI_Bcast         1000        500        500   0.0000186122   0.0000153590 
+                                         MPI_Bcast        10000        500        500   0.0000484283   0.0000390090 
+                                         MPI_Bcast       100000        500        500   0.0004096464   0.0004020730 
+                                         MPI_Bcast      1000000        500        500   0.0036133922   0.0035900190 
+# Benchmark started at Thu Mar 21 17:23:51 2024
+# Execution time: 3s
+==================================================================
+#Iteration=4
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Bcast --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=500 --summary=median,mean
+#MPI calls:
+#	MPI_Bcast
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=500
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                         MPI_Bcast            1        500        500   0.0000097105   0.0000082615 
+                                         MPI_Bcast           10        500        500   0.0000088175   0.0000081155 
+                                         MPI_Bcast          100        500        500   0.0000097992   0.0000085515 
+                                         MPI_Bcast         1000        500        500   0.0000185310   0.0000154345 
+                                         MPI_Bcast        10000        500        500   0.0000478778   0.0000388230 
+                                         MPI_Bcast       100000        500        500   0.0004220077   0.0004034060 
+                                         MPI_Bcast      1000000        500        500   0.0036229018   0.0036105385 
+# Benchmark started at Thu Mar 21 17:24:02 2024
+# Execution time: 3s
+==================================================================
+#Iteration=5
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Bcast --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=500 --summary=median,mean
+#MPI calls:
+#	MPI_Bcast
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=500
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                         MPI_Bcast            1        500        500   0.0000091571   0.0000075445 
+                                         MPI_Bcast           10        500        500   0.0000084497   0.0000076495 
+                                         MPI_Bcast          100        500        500   0.0000093129   0.0000086320 
+                                         MPI_Bcast         1000        500        500   0.0000186134   0.0000155350 
+                                         MPI_Bcast        10000        500        500   0.0000481819   0.0000386830 
+                                         MPI_Bcast       100000        500        500   0.0004370465   0.0004024590 
+                                         MPI_Bcast      1000000        500        500   0.0036155637   0.0036065590 
+# Benchmark started at Thu Mar 21 17:24:13 2024
+# Execution time: 3s
+==================================================================
+#Iteration=6
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Bcast --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=500 --summary=median,mean
+#MPI calls:
+#	MPI_Bcast
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=500
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                         MPI_Bcast            1        500        500   0.0000100250   0.0000086665 
+                                         MPI_Bcast           10        500        500   0.0000091982   0.0000085860 
+                                         MPI_Bcast          100        500        500   0.0000095604   0.0000087070 
+                                         MPI_Bcast         1000        500        500   0.0000184468   0.0000152745 
+                                         MPI_Bcast        10000        500        500   0.0000488619   0.0000388035 
+                                         MPI_Bcast       100000        500        500   0.0004101165   0.0004031060 
+                                         MPI_Bcast      1000000        500        500   0.0035982119   0.0035977795 
+# Benchmark started at Thu Mar 21 17:24:27 2024
+# Execution time: 5s
+==================================================================
+#Iteration=7
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Bcast --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=500 --summary=median,mean
+#MPI calls:
+#	MPI_Bcast
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=500
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                         MPI_Bcast            1        500        500   0.0000103852   0.0000088770 
+                                         MPI_Bcast           10        500        500   0.0000096565   0.0000089925 
+                                         MPI_Bcast          100        500        500   0.0000100840   0.0000094730 
+                                         MPI_Bcast         1000        500        500   0.0000186778   0.0000154745 
+                                         MPI_Bcast        10000        500        500   0.0000495443   0.0000389285 
+                                         MPI_Bcast       100000        500        500   0.0004234375   0.0003999595 
+                                         MPI_Bcast      1000000        500        500   0.0036373067   0.0035742735 
+# Benchmark started at Thu Mar 21 17:24:39 2024
+# Execution time: 4s
+==================================================================

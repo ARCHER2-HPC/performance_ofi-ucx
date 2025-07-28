@@ -1,0 +1,244 @@
+
+Lmod is automatically replacing "craype-network-ofi" with "craype-network-ucx".
+
+
+Inactive Modules:
+  1) cray-mpich
+
+==================================================================
+#Lib:UCX
+method=MPI_Scatter
+#Iteration=1
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Scatter --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scatter
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=32768
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                       MPI_Scatter            1        300        300   0.0000821308   0.0000661440 
+                                       MPI_Scatter           10        300        300   0.0001840114   0.0001633345 
+                                       MPI_Scatter          100        300        300   0.0008076928   0.0006968870 
+                                       MPI_Scatter         1000        300        300   0.0069758938   0.0067571770 
+                                       MPI_Scatter        10000        300        300   0.0721997746   0.0719518905 
+# Benchmark started at Fri Mar 22 13:04:11 2024
+# Execution time: 35s
+==================================================================
+#Iteration=2
+srun: Job 6011495 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 6011495
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Scatter --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scatter
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=32768
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                       MPI_Scatter            1        300        300   0.0000714181   0.0000656720 
+                                       MPI_Scatter           10        300        300   0.0001748602   0.0001572075 
+                                       MPI_Scatter          100        300        300   0.0007041418   0.0006193110 
+                                       MPI_Scatter         1000        300        300   0.0062953972   0.0059989790 
+                                       MPI_Scatter        10000        300        300   0.0660561698   0.0658293365 
+# Benchmark started at Fri Mar 22 13:06:11 2024
+# Execution time: 39s
+==================================================================
+#Iteration=3
+srun: Job 6011495 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 6011495
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Scatter --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scatter
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=32768
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                       MPI_Scatter            1        300        300   0.0000844954   0.0000642635 
+                                       MPI_Scatter           10        300        300   0.0001532989   0.0001455400 
+                                       MPI_Scatter          100        300        300   0.0005788615   0.0005175995 
+                                       MPI_Scatter         1000        300        300   0.0052805202   0.0050662695 
+                                       MPI_Scatter        10000        300        300   0.0555004369   0.0552553965 
+# Benchmark started at Fri Mar 22 13:08:09 2024
+# Execution time: 36s
+==================================================================
+#Iteration=4
+srun: Job 6011495 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 6011495
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Scatter --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scatter
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=32768
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000500
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                       MPI_Scatter            1        300        300   0.0000940015   0.0000648035 
+                                       MPI_Scatter           10        300        300   0.0001625201   0.0001453205 
+                                       MPI_Scatter          100        300        300   0.0006057561   0.0005168580 
+                                       MPI_Scatter         1000        300        300   0.0053294225   0.0050800980 
+                                       MPI_Scatter        10000        300        300   0.0557519165   0.0554707070 
+# Benchmark started at Fri Mar 22 13:10:02 2024
+# Execution time: 36s
+==================================================================
+#Iteration=5
+srun: Job 6011495 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 6011495
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Scatter --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scatter
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=32768
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                       MPI_Scatter            1        300        300   0.0001173260   0.0000647470 
+                                       MPI_Scatter           10        300        300   0.0001989891   0.0001468780 
+                                       MPI_Scatter          100        300        300   0.0006340977   0.0005221100 
+                                       MPI_Scatter         1000        300        300   0.0053366990   0.0050930025 
+                                       MPI_Scatter        10000        300        300   0.0563314013   0.0560495370 
+# Benchmark started at Fri Mar 22 13:12:13 2024
+# Execution time: 28s
+==================================================================
+#Iteration=6
+srun: Job 6011495 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 6011495
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Scatter --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scatter
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=32768
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                       MPI_Scatter            1        300        300   0.0000779323   0.0000650305 
+                                       MPI_Scatter           10        300        300   0.0001654894   0.0001491160 
+                                       MPI_Scatter          100        300        300   0.0006694933   0.0005495055 
+                                       MPI_Scatter         1000        300        300   0.0057632372   0.0055643025 
+                                       MPI_Scatter        10000        300        300   0.0609643355   0.0607622890 
+# Benchmark started at Fri Mar 22 13:14:06 2024
+# Execution time: 34s
+==================================================================
+#Iteration=7
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Scatter --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scatter
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=32768
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                       MPI_Scatter            1        300        300   0.0000907710   0.0000645465 
+                                       MPI_Scatter           10        300        300   0.0001567351   0.0001466515 
+                                       MPI_Scatter          100        300        300   0.0005741563   0.0005187285 
+                                       MPI_Scatter         1000        300        300   0.0053082518   0.0051201755 
+                                       MPI_Scatter        10000        300        300   0.0561949702   0.0559334160 
+# Benchmark started at Fri Mar 22 13:15:58 2024
+# Execution time: 38s
+==================================================================

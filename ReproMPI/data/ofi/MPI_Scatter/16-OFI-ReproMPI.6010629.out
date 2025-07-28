@@ -1,0 +1,237 @@
+
+Lmod is automatically replacing "cce/15.0.0" with "gcc/11.2.0".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.3.3" with "PrgEnv-gnu/8.3.3".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.23
+
+==================================================================
+#Lib:OFI
+method=MPI_Scatter
+#Iteration=1
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Scatter --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scatter
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=2048
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                       MPI_Scatter            1        300        300   0.0000897263   0.0000341805 
+                                       MPI_Scatter           10        300        300   0.0000391309   0.0000381985 
+                                       MPI_Scatter          100        300        300   0.0000936848   0.0000682820 
+                                       MPI_Scatter         1000        300        300   0.0002883439   0.0002709750 
+                                       MPI_Scatter        10000        300        300   0.0022119063   0.0020757560 
+# Benchmark started at Fri Mar 22 11:43:28 2024
+# Execution time: 2s
+==================================================================
+#Iteration=2
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Scatter --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scatter
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=2048
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                       MPI_Scatter            1        300        300   0.0000365637   0.0000330190 
+                                       MPI_Scatter           10        300        300   0.0000376966   0.0000366310 
+                                       MPI_Scatter          100        300        300   0.0000912560   0.0000672450 
+                                       MPI_Scatter         1000        300        300   0.0002890308   0.0002705810 
+                                       MPI_Scatter        10000        300        300   0.0021855319   0.0020664380 
+# Benchmark started at Fri Mar 22 11:43:36 2024
+# Execution time: 2s
+==================================================================
+#Iteration=3
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Scatter --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scatter
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=2048
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                       MPI_Scatter            1        300        300   0.0000393704   0.0000343270 
+                                       MPI_Scatter           10        300        300   0.0000388295   0.0000373320 
+                                       MPI_Scatter          100        300        300   0.0000914612   0.0000674205 
+                                       MPI_Scatter         1000        300        300   0.0002968474   0.0002700955 
+                                       MPI_Scatter        10000        300        300   0.0022717136   0.0020646045 
+# Benchmark started at Fri Mar 22 11:43:45 2024
+# Execution time: 1s
+==================================================================
+#Iteration=4
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Scatter --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scatter
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=2048
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                       MPI_Scatter            1        300        300   0.0000374769   0.0000339505 
+                                       MPI_Scatter           10        300        300   0.0000392654   0.0000374980 
+                                       MPI_Scatter          100        300        300   0.0000914935   0.0000672850 
+                                       MPI_Scatter         1000        300        300   0.0002903976   0.0002702380 
+                                       MPI_Scatter        10000        300        300   0.0022481339   0.0020516795 
+# Benchmark started at Fri Mar 22 11:43:53 2024
+# Execution time: 2s
+==================================================================
+#Iteration=5
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Scatter --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scatter
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=2048
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                       MPI_Scatter            1        300        300   0.0000373383   0.0000335045 
+                                       MPI_Scatter           10        300        300   0.0000388236   0.0000370370 
+                                       MPI_Scatter          100        300        300   0.0000925949   0.0000671645 
+                                       MPI_Scatter         1000        300        300   0.0002872561   0.0002705735 
+                                       MPI_Scatter        10000        300        300   0.0021986893   0.0020701050 
+# Benchmark started at Fri Mar 22 11:44:03 2024
+# Execution time: 2s
+==================================================================
+#Iteration=6
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Scatter --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scatter
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=2048
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                       MPI_Scatter            1        300        300   0.0000372619   0.0000336300 
+                                       MPI_Scatter           10        300        300   0.0000381755   0.0000369860 
+                                       MPI_Scatter          100        300        300   0.0000953102   0.0000670095 
+                                       MPI_Scatter         1000        300        300   0.0003019379   0.0002703980 
+                                       MPI_Scatter        10000        300        300   0.0022493401   0.0020772085 
+# Benchmark started at Fri Mar 22 11:44:11 2024
+# Execution time: 2s
+==================================================================
+#Iteration=7
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Scatter --msizes-list=1,10,100,1000,10000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scatter
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=2048
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                       MPI_Scatter            1        300        300   0.0000769682   0.0000347370 
+                                       MPI_Scatter           10        300        300   0.0000386817   0.0000378330 
+                                       MPI_Scatter          100        300        300   0.0000941374   0.0000672400 
+                                       MPI_Scatter         1000        300        300   0.0002888968   0.0002713940 
+                                       MPI_Scatter        10000        300        300   0.0022382425   0.0020761665 
+# Benchmark started at Fri Mar 22 11:44:22 2024
+# Execution time: 1s
+==================================================================
