@@ -1,0 +1,335 @@
+
+Lmod is automatically replacing "cce/15.0.0" with "gcc/11.2.0".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.3.3" with "PrgEnv-gnu/8.3.3".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.23
+
+==================================================================
+#Lib:OFI
+method=MPI_Allgather
+#Iteration=1
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Allgather --msizes-list=1,10,100,1000,10000 --nrep=200 --summary=median,mean
+#MPI calls:
+#	MPI_Allgather
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=32768
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000500
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=200
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                     MPI_Allgather            1        200        200   0.0020395248   0.0002618855 
+                                     MPI_Allgather           10        200        200   0.0019973344   0.0016108460 
+                                     MPI_Allgather          100        200        200   0.0156599360   0.0151901345 
+                                     MPI_Allgather         1000        200        200   0.1355463942   0.1339752090 
+                                     MPI_Allgather        10000        200        200   0.7679182485   0.7466309240 
+# Benchmark started at Mon Mar 18 17:39:12 2024
+# Execution time: 186s
+==================================================================
+#Iteration=2
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Allgather --msizes-list=1,10,100,1000,10000 --nrep=200 --summary=median,mean
+#MPI calls:
+#	MPI_Allgather
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=32768
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=200
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                     MPI_Allgather            1        200        200   0.0019326239   0.0002675070 
+                                     MPI_Allgather           10        200        200   0.0020414697   0.0016025930 
+                                     MPI_Allgather          100        200        200   0.0162513420   0.0157654775 
+                                     MPI_Allgather         1000        200        200   0.1408295756   0.1394281615 
+                                     MPI_Allgather        10000        200        200   0.7666535355   0.7447779205 
+# Benchmark started at Mon Mar 18 17:42:28 2024
+# Execution time: 187s
+==================================================================
+#Iteration=3
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Allgather --msizes-list=1,10,100,1000,10000 --nrep=200 --summary=median,mean
+#MPI calls:
+#	MPI_Allgather
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=32768
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=200
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                     MPI_Allgather            1        200        200   0.0018077676   0.0002638420 
+                                     MPI_Allgather           10        200        200   0.0020854807   0.0016020220 
+                                     MPI_Allgather          100        200        200   0.0168651714   0.0163857660 
+                                     MPI_Allgather         1000        200        200   0.1411353559   0.1392248810 
+                                     MPI_Allgather        10000        200        200   0.7633930258   0.7416471680 
+# Benchmark started at Mon Mar 18 17:45:45 2024
+# Execution time: 186s
+==================================================================
+#Iteration=4
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Allgather --msizes-list=1,10,100,1000,10000 --nrep=200 --summary=median,mean
+#MPI calls:
+#	MPI_Allgather
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=32768
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=200
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                     MPI_Allgather            1        200        200   0.0018434915   0.0002659020 
+                                     MPI_Allgather           10        200        200   0.0019698242   0.0015972555 
+                                     MPI_Allgather          100        200        200   0.0164178043   0.0159222475 
+                                     MPI_Allgather         1000        200        200   0.1495782620   0.1483650665 
+                                     MPI_Allgather        10000        200        200   0.7695707704   0.7473181205 
+# Benchmark started at Mon Mar 18 17:49:02 2024
+# Execution time: 190s
+==================================================================
+#Iteration=5
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Allgather --msizes-list=1,10,100,1000,10000 --nrep=200 --summary=median,mean
+#MPI calls:
+#	MPI_Allgather
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=32768
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=200
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                     MPI_Allgather            1        200        200   0.0018870600   0.0002628970 
+                                     MPI_Allgather           10        200        200   0.0018887203   0.0016061535 
+                                     MPI_Allgather          100        200        200   0.0164845730   0.0159298350 
+                                     MPI_Allgather         1000        200        200   0.1518337922   0.1503108920 
+                                     MPI_Allgather        10000        200        200   0.7618769469   0.7400953485 
+# Benchmark started at Mon Mar 18 17:52:24 2024
+# Execution time: 188s
+==================================================================
+#Iteration=6
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Allgather --msizes-list=1,10,100,1000,10000 --nrep=200 --summary=median,mean
+#MPI calls:
+#	MPI_Allgather
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=32768
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=200
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                     MPI_Allgather            1        200        200   0.0020500087   0.0002669835 
+                                     MPI_Allgather           10        200        200   0.0020712284   0.0015984835 
+                                     MPI_Allgather          100        200        200   0.0164730321   0.0160155105 
+                                     MPI_Allgather         1000        200        200   0.1497219760   0.1478796565 
+                                     MPI_Allgather        10000        200        200   0.7905457894   0.7689354135 
+# Benchmark started at Mon Mar 18 17:55:43 2024
+# Execution time: 194s
+==================================================================
+#Iteration=7
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Allgather --msizes-list=1,10,100,1000,10000 --nrep=200 --summary=median,mean
+#MPI calls:
+#	MPI_Allgather
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=32768
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=200
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                     MPI_Allgather            1        200        200   0.0019590863   0.0002660410 
+                                     MPI_Allgather           10        200        200   0.0021074681   0.0015970565 
+                                     MPI_Allgather          100        200        200   0.0163298029   0.0158560650 
+                                     MPI_Allgather         1000        200        200   0.1537700501   0.1522027875 
+                                     MPI_Allgather        10000        200        200   0.7628075159   0.7408942815 
+# Benchmark started at Mon Mar 18 17:59:05 2024
+# Execution time: 189s
+==================================================================
+#Iteration=8
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Allgather --msizes-list=1,10,100,1000,10000 --nrep=200 --summary=median,mean
+#MPI calls:
+#	MPI_Allgather
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=32768
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=200
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                     MPI_Allgather            1        200        200   0.0021561502   0.0002684155 
+                                     MPI_Allgather           10        200        200   0.0019477018   0.0016077705 
+                                     MPI_Allgather          100        200        200   0.0165741670   0.0160835015 
+                                     MPI_Allgather         1000        200        200   0.1529694023   0.1511227840 
+                                     MPI_Allgather        10000        200        200   0.7624614323   0.7403864440 
+# Benchmark started at Mon Mar 18 18:02:23 2024
+# Execution time: 189s
+==================================================================
+#Iteration=9
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Allgather --msizes-list=1,10,100,1000,10000 --nrep=200 --summary=median,mean
+#MPI calls:
+#	MPI_Allgather
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=32768
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=200
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                     MPI_Allgather            1        200        200   0.0019696889   0.0002712090 
+                                     MPI_Allgather           10        200        200   0.0019935289   0.0016009930 
+                                     MPI_Allgather          100        200        200   0.0167424969   0.0162495415 
+                                     MPI_Allgather         1000        200        200   0.1579080226   0.1560397260 
+                                     MPI_Allgather        10000        200        200   0.7725173647   0.7507383055 
+# Benchmark started at Mon Mar 18 18:05:42 2024
+# Execution time: 192s
+==================================================================
+#Iteration=10
+srun: Job 5974103 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 5974103
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Allgather --msizes-list=1,10,100,1000,10000 --nrep=200 --summary=median,mean
+#MPI calls:
+#	MPI_Allgather
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=32768
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=200
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                     MPI_Allgather            1        200        200   0.0019230364   0.0002718390 
+                                     MPI_Allgather           10        200        200   0.0019585764   0.0016026320 
+                                     MPI_Allgather          100        200        200   0.0163644102   0.0159351090 
+                                     MPI_Allgather         1000        200        200   0.1584851571   0.1573066020 
+                                     MPI_Allgather        10000        200        200   0.7880074999   0.7658460935 
+# Benchmark started at Mon Mar 18 18:09:04 2024
+# Execution time: 195s
+==================================================================

@@ -1,0 +1,175 @@
+
+Lmod is automatically replacing "cce/15.0.0" with "gcc/11.2.0".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.3.3" with "PrgEnv-gnu/8.3.3".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.23
+
+==================================================================
+#Lib:OFI
+method=MPI_Alltoall
+#Iteration=1
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Alltoall --msizes-list=1,10,100,1000,10000 --nrep=5 --summary=median,mean
+#MPI calls:
+#	MPI_Alltoall
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=5
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                      MPI_Alltoall            1          5          5   0.0922840720   0.0005529570 
+                                      MPI_Alltoall           10          5          5   0.0012210054   0.0011992420 
+                                      MPI_Alltoall          100          5          5   0.0066008750   0.0022752530 
+                                      MPI_Alltoall         1000          5          5   16.9551778446   0.0131177390 
+                                      MPI_Alltoall        10000          5          5   0.5451742510   0.0507173430 
+# Benchmark started at Fri Mar 22 13:51:01 2024
+# Execution time: 89s
+==================================================================
+#Iteration=2
+srun: Job 6012360 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 6012360
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Alltoall --msizes-list=1,10,100,1000,10000 --nrep=5 --summary=median,mean
+#MPI calls:
+#	MPI_Alltoall
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=5
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                      MPI_Alltoall            1          5          5   0.0957493560   0.0007039550 
+                                      MPI_Alltoall           10          5          5   0.0014547726   0.0014567810 
+                                      MPI_Alltoall          100          5          5   0.0066357788   0.0022286290 
+                                      MPI_Alltoall         1000          5          5   16.8846793256   0.0130962750 
+                                      MPI_Alltoall        10000          5          5   0.5229947790   0.0514810930 
+# Benchmark started at Fri Mar 22 13:52:37 2024
+# Execution time: 88s
+==================================================================
+#Iteration=3
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Alltoall --msizes-list=1,10,100,1000,10000 --nrep=5 --summary=median,mean
+#MPI calls:
+#	MPI_Alltoall
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=5
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                      MPI_Alltoall            1          5          5   0.0932871226   0.0006942470 
+                                      MPI_Alltoall           10          5          5   0.0014700534   0.0014788960 
+                                      MPI_Alltoall          100          5          5   0.0070294922   0.0024936880 
+                                      MPI_Alltoall         1000          5          5   16.9583460884   0.0131388200 
+                                      MPI_Alltoall        10000          5          5   0.5176638864   0.0503808670 
+# Benchmark started at Fri Mar 22 13:54:13 2024
+# Execution time: 88s
+==================================================================
+#Iteration=4
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Alltoall --msizes-list=1,10,100,1000,10000 --nrep=5 --summary=median,mean
+#MPI calls:
+#	MPI_Alltoall
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=5
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                      MPI_Alltoall            1          5          5   0.0955503166   0.0007498420 
+                                      MPI_Alltoall           10          5          5   0.0014641498   0.0014666740 
+                                      MPI_Alltoall          100          5          5   0.0065789016   0.0021526000 
+                                      MPI_Alltoall         1000          5          5   16.8261973180   0.0130594230 
+                                      MPI_Alltoall        10000          5          5   0.5229499474   0.0503583300 
+# Benchmark started at Fri Mar 22 13:55:48 2024
+# Execution time: 88s
+==================================================================
+#Iteration=5
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ofi/reprompi/./bin/mpibenchmark --calls-list=MPI_Alltoall --msizes-list=1,10,100,1000,10000 --nrep=5 --summary=median,mean
+#MPI calls:
+#	MPI_Alltoall
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=cd615430185b38692c0761f2888279724e5012ed
+#@nprocs=1024
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=5
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                      MPI_Alltoall            1          5          5   0.0966482810   0.0007244700 
+                                      MPI_Alltoall           10          5          5   0.0014703224   0.0014585890 
+                                      MPI_Alltoall          100          5          5   0.0066518378   0.0022281650 
+                                      MPI_Alltoall         1000          5          5   16.7840955766   0.0131052120 
+                                      MPI_Alltoall        10000          5          5   0.5242794964   0.0503701590 
+# Benchmark started at Fri Mar 22 13:57:23 2024
+# Execution time: 88s
+==================================================================

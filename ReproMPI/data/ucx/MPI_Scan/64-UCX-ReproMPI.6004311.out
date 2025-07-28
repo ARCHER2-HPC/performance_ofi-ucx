@@ -1,0 +1,270 @@
+
+Lmod is automatically replacing "craype-network-ofi" with "craype-network-ucx".
+
+
+Inactive Modules:
+  1) cray-mpich
+
+==================================================================
+#Lib:UCX
+method=MPI_Scan
+#Iteration=1
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Scan --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scan
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=8192
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                          MPI_Scan            1        300        300   0.0000748050   0.0000578815 
+                                          MPI_Scan           10        300        300   0.0000618880   0.0000581425 
+                                          MPI_Scan          100        300        300   0.0000737607   0.0000696850 
+                                          MPI_Scan         1000        300        300   0.0000968511   0.0000937410 
+                                          MPI_Scan        10000        300        300   0.0007153007   0.0005710270 
+                                          MPI_Scan       100000        300        300   0.0073273518   0.0071884870 
+                                          MPI_Scan      1000000        300        300   0.0567686844   0.0562484880 
+# Benchmark started at Thu Mar 21 15:45:15 2024
+# Execution time: 22s
+==================================================================
+#Iteration=2
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Scan --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scan
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=8192
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                          MPI_Scan            1        300        300   0.0000854819   0.0000582980 
+                                          MPI_Scan           10        300        300   0.0000700092   0.0000572910 
+                                          MPI_Scan          100        300        300   0.0000801469   0.0000700140 
+                                          MPI_Scan         1000        300        300   0.0001079257   0.0000935350 
+                                          MPI_Scan        10000        300        300   0.0007443691   0.0005741040 
+                                          MPI_Scan       100000        300        300   0.0074248587   0.0071963455 
+                                          MPI_Scan      1000000        300        300   0.0559018341   0.0553359555 
+# Benchmark started at Thu Mar 21 15:46:01 2024
+# Execution time: 23s
+==================================================================
+#Iteration=3
+srun: Job 6004311 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 6004311
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Scan --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scan
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=8192
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                          MPI_Scan            1        300        300   0.0000678853   0.0000581170 
+                                          MPI_Scan           10        300        300   0.0000633516   0.0000569795 
+                                          MPI_Scan          100        300        300   0.0000772316   0.0000704955 
+                                          MPI_Scan         1000        300        300   0.0000975232   0.0000937865 
+                                          MPI_Scan        10000        300        300   0.0007371562   0.0005702815 
+                                          MPI_Scan       100000        300        300   0.0072592316   0.0071328785 
+                                          MPI_Scan      1000000        300        300   0.0574080135   0.0564842440 
+# Benchmark started at Thu Mar 21 15:46:50 2024
+# Execution time: 23s
+==================================================================
+#Iteration=4
+srun: Job 6004311 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 6004311
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Scan --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scan
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=8192
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                          MPI_Scan            1        300        300   0.0000867930   0.0000598300 
+                                          MPI_Scan           10        300        300   0.0000896610   0.0000587275 
+                                          MPI_Scan          100        300        300   0.0000844787   0.0000722430 
+                                          MPI_Scan         1000        300        300   0.0001255207   0.0000963305 
+                                          MPI_Scan        10000        300        300   0.0007686474   0.0006017180 
+                                          MPI_Scan       100000        300        300   0.0073591728   0.0071754450 
+                                          MPI_Scan      1000000        300        300   0.0568334891   0.0563138775 
+# Benchmark started at Thu Mar 21 15:47:38 2024
+# Execution time: 22s
+==================================================================
+#Iteration=5
+srun: Job 6004311 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 6004311
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Scan --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scan
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=8192
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                          MPI_Scan            1        300        300   0.0000647378   0.0000578715 
+                                          MPI_Scan           10        300        300   0.0000586831   0.0000565890 
+                                          MPI_Scan          100        300        300   0.0000715241   0.0000674595 
+                                          MPI_Scan         1000        300        300   0.0000976583   0.0000925435 
+                                          MPI_Scan        10000        300        300   0.0007229249   0.0005706125 
+                                          MPI_Scan       100000        300        300   0.0073219965   0.0071610380 
+                                          MPI_Scan      1000000        300        300   0.0570555796   0.0564934405 
+# Benchmark started at Thu Mar 21 15:48:25 2024
+# Execution time: 24s
+==================================================================
+#Iteration=6
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Scan --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scan
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=8192
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                          MPI_Scan            1        300        300   0.0000665547   0.0000588835 
+                                          MPI_Scan           10        300        300   0.0000652476   0.0000577415 
+                                          MPI_Scan          100        300        300   0.0000756868   0.0000704055 
+                                          MPI_Scan         1000        300        300   0.0001050535   0.0000922480 
+                                          MPI_Scan        10000        300        300   0.0007080467   0.0005712260 
+                                          MPI_Scan       100000        300        300   0.0074650426   0.0072729235 
+                                          MPI_Scan      1000000        300        300   0.0573686421   0.0565900850 
+# Benchmark started at Thu Mar 21 15:49:13 2024
+# Execution time: 23s
+==================================================================
+#Iteration=7
+srun: Job 6004311 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 6004311
+#Command-Line Arguments: /mnt/lustre/a2fs-work2/work/z19/z19/shared/MPI_collective_bench/ucx/reprompi/./bin/mpibenchmark --calls-list=MPI_Scan --msizes-list=1,10,100,1000,10000,100000,1000000 --nrep=300 --summary=median,mean
+#MPI calls:
+#	MPI_Scan
+#Message sizes:
+#	1
+#	10
+#	100
+#	1000
+#	10000
+#	100000
+#	1000000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=549c95c62c21e3649a3b71b29a6a558962c057a1
+#@nprocs=8192
+#@clock=MPI_Wtime
+#@clock_tick=0.0000000400
+#@clocksync=None
+#@procsync=MPI_Barrier
+#@runtime_type=local
+#@nrep=300
+                                              test        count total_nrep valid_nrep       mean_sec     median_sec 
+                                          MPI_Scan            1        300        300   0.0000660811   0.0000575000 
+                                          MPI_Scan           10        300        300   0.0000590811   0.0000569345 
+                                          MPI_Scan          100        300        300   0.0000825971   0.0000675395 
+                                          MPI_Scan         1000        300        300   0.0001095876   0.0000931545 
+                                          MPI_Scan        10000        300        300   0.0007187684   0.0005802655 
+                                          MPI_Scan       100000        300        300   0.0074521857   0.0071568770 
+                                          MPI_Scan      1000000        300        300   0.0571957187   0.0566049615 
+# Benchmark started at Thu Mar 21 15:50:02 2024
+# Execution time: 23s
+==================================================================

@@ -11,4 +11,5 @@ A repository for data from the comparison of performance and scaling of the Open
  - [Ohio State University MPI microbenchmarks](OSU-MPI/)
  - [OpenSBLI](OpenSBLI/)
  - [VASP](VASP/)
+ - [ReproMPI](ReproMPI/)
  
